@@ -101,7 +101,7 @@ class SqlToRelConverterTest extends SqlToRelTestBase {
   }
 
   @Test void testIntegerLiteral() {
-    final String sql = "select 1 from emp";
+    final String sql = "select t from emp";
     sql(sql).ok();
   }
 

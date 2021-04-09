@@ -240,4 +240,9 @@ class MappingTest {
     assertThrows(Exception.class, () -> Mappings.bijection(Arrays.asList(1, 0, 1)),
         "more than one permutation element maps to position 1");
   }
+
+  @Test public void testInvert() {
+    List<Integer> targets = Arrays.asList(3, 1, 4, 5, 8);
+    final Mapping mapping = Mappings.source(targets, 10);
+  }
 }
